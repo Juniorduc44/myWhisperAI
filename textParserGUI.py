@@ -1,4 +1,4 @@
-__version__=0.0.2
+__version__=0.0.3
 #txtParserGUI
 #python 3.10.12
 
@@ -17,12 +17,12 @@ def button_function():
         textFile = f.read()
 
     # Replace the target string
-    textFile = textFile.replace('. ', '\n')
-    textFile1 = textFile.replace('\n', '. ')
+    textFile1 = textFile.replace('. ', '\n')
+    textFile2 = textFile1.replace('\n', '. ')
 
     # Write to the new file
     with open(txt2, 'w') as f:
-        f.write(textFile1)
+        f.write(textFile2)
 
 
 
