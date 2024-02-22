@@ -1,3 +1,4 @@
+__version__"0.0.1"
 #txtParserGUI
 #python 3.10.12
 
@@ -16,11 +17,11 @@ def button_function():
         textFile = f.read()
 
     # Replace the target string
-    textFile = textFile.replace('\n', '. ')
+    textFile1 = textFile.replace('\n', '. ')
 
     # Write to the new file
     with open(txt2, 'w') as f:
-        f.write(textFile)
+        f.write(textFile1)
 
 
 
@@ -36,7 +37,7 @@ frame1 = customtkinter.CTkFrame(master = app)
 frame1.pack(pady=10, padx=15, expand=True)
 
 #Create place for inputs
-entry1 = customtkinter.CTkEntry(master=frame1, width=200, placeholder_text="Enter the file path here...", )
+entry1 = customtkinter.CTkEntry(master=frame1, width=200, placeholder_text="Enter file path without '.txt' part...", )
 entry1.pack(padx=25, pady=10)
 
 #create a button to engage entry field
