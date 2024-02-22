@@ -1,4 +1,4 @@
-__version__=0.0.3
+__version__="0.0.4"
 #txtParserGUI
 #python 3.10.12
 
@@ -18,11 +18,10 @@ def button_function():
 
     # Replace the target string
     textFile1 = textFile.replace('. ', '\n')
-    textFile2 = textFile1.replace('\n', '. ')
 
     # Write to the new file
     with open(txt2, 'w') as f:
-        f.write(textFile2)
+        f.write(textFile1)
 
 
 
@@ -35,7 +34,7 @@ app.title("Text Parser")
 
 # Build frame for window to look better
 frame1 = customtkinter.CTkFrame(master = app)
-frame1.pack(pady=10, padx=15, expand=True, width=700)
+frame1.pack(pady=10, padx=15, expand=True)
 
 #Create place for inputs
 entry1 = customtkinter.CTkEntry(master=frame1, width=600, placeholder_text="Enter the file path here...", )
