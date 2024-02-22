@@ -1,0 +1,10 @@
+## This file ignores your local files which need to stay local to your computer only
+
+
+#environment file
+*venv*
+
+#practice files
+*practice*
+
+
