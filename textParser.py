@@ -1,3 +1,4 @@
+__version__=0.0.2
 #txtParser
 #python 3.10.12
 
@@ -11,7 +12,7 @@ with open(txt, 'r') as f:
 
 # Replace the target string
 textFile = textFile.replace('. ', '\n')
-
+textFile1 = textFile.replace('\n', '. ')
 # Write to the new file
 with open(txt2, 'w') as f:
     f.write(textFile)
